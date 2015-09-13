@@ -1,0 +1,6 @@
+<h2>Edit suggestion</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: suggestion_path(@conn, :update, @suggestion) %>
+
+<%= link "Back", to: suggestion_path(@conn, :index) %>

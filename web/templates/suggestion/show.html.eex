@@ -1,0 +1,13 @@
+<h2>Show suggestion</h2>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @suggestion.title %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: suggestion_path(@conn, :edit, @suggestion) %>
+<%= link "Back", to: suggestion_path(@conn, :index) %>

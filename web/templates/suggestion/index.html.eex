@@ -1,0 +1,26 @@
+<h2>Listing suggestions</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for suggestion <- @suggestions do %>
+    <tr>
+      <td><%= suggestion.title %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: suggestion_path(@conn, :show, suggestion), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: suggestion_path(@conn, :edit, suggestion), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: suggestion_path(@conn, :delete, suggestion), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New suggestion", to: suggestion_path(@conn, :new) %>
