@@ -27,3 +27,4 @@ erl_crash.dump
 /deps
 erl_crash.dump
 *.ez
+.DS_Store
