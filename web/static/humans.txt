@@ -1,0 +1,12 @@
+/* TEAM */
+	Emailer of Reservation and Beer Requests: Jeff
+	Twitter: @jeff_french
+
+	Enterprise Data Magistrate and Chief Burrito Wrangler Writ Large: Rob
+	Twitter: @datachomp
+
+	Technical Director of Technical Operations: Rick
+	Twitter: @ryoe_ok
+
+/* THANKS */
+	All of you: You know who you are.

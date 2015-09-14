@@ -1,0 +1,30 @@
+<h2>Listing agendas</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Venue</th>
+      <th>Beer 1</th>
+      <th>Topic 1</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for agenda <- @agendas do %>
+    <tr>
+      <td><%= agenda.venue %></td>
+      <td><%= agenda.beer_1 %></td>
+      <td><%= agenda.topic_1 %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: agenda_path(@conn, :show, agenda), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: agenda_path(@conn, :edit, agenda), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: agenda_path(@conn, :delete, agenda), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New agenda", to: agenda_path(@conn, :new) %>

@@ -1,0 +1,23 @@
+<h2>Show agenda</h2>
+
+<ul>
+
+  <li>
+    <strong>Venue:</strong>
+    <%= @agenda.venue %>
+  </li>
+
+  <li>
+    <strong>Beer 1:</strong>
+    <%= @agenda.beer_1 %>
+  </li>
+
+  <li>
+    <strong>Topic 1:</strong>
+    <%= @agenda.topic_1 %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: agenda_path(@conn, :edit, @agenda) %>
+<%= link "Back", to: agenda_path(@conn, :index) %>
