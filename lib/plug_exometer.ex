@@ -12,8 +12,8 @@ defmodule PlugExometer do
       after_time = :os.timestamp
       diff       = :timer.now_diff after_time, before_time
 
-      :ok = Exometer.update ~w(nerdbeers webapp resp_time)a, diff / 1_000
-      :ok = Exometer.update ~w(nerdbeers webapp resp_count)a, 1
+      # :ok = Exometer.update ~w(nerdbeers webapp resp_time)a, diff / 1_000
+      # :ok = Exometer.update ~w(nerdbeers webapp resp_count)a, 1
       conn
     end
   end

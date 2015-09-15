@@ -16,7 +16,8 @@ defmodule Nerdbeers.Mixfile do
     [mod: {Nerdbeers, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger,
                     :phoenix_ecto, :postgrex, :rollbax,
-                    :exometer, :exometer_core]]
+                    :exometer, :exometer_core,
+                    :lager, :lager_logger]]
   end
 
   # Specifies which paths to compile per environment
@@ -35,6 +36,9 @@ defmodule Nerdbeers.Mixfile do
      # monitoring
      {:exometer_core, github: "PSPDFKit-labs/exometer_core", override: true},
      {:exometer, github: "PSPDFKit-labs/exometer"},
-     {:edown, github: "uwiger/edown", tag: "0.7", override: true}]
+     {:edown, github: "uwiger/edown", tag: "0.7", override: true},
+
+     {:lager_logger, "~> 1.0"},
+     {:lager, "~> 2.1", override: true}]
   end
 end
