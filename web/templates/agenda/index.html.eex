@@ -1,18 +1,18 @@
-<h2>details</h2><br/>
+<h2><%= @agendas.meeting_date %> details</h2><br/>
 
 <table class="table">
   <thead>
     <tr><th>topic</th><th>beer</th></tr>
   </thead>
   <tbody>
-    <tr><td><i class="fa fa-wrench fa-2x" /> </td><td><i class="fa fa-beer fa-2x" /> </td></tr>
-    <tr><td><i class="fa fa-wrench fa-2x" /> </td><td><i class="fa fa-beer fa-2x" /> </td></tr>
-    <tr><td><i class="fa fa-wrench fa-2x" /> </td><td><i class="fa fa-beer fa-2x" /> </td></tr>
+    <tr><td><i class="fa fa-wrench fa-2x" /> <%= @agendas.beer_1 %> </td><td><i class="fa fa-beer fa-2x" /> <%= @agendas.topic_1 %> </td></tr>
+    <tr><td><i class="fa fa-wrench fa-2x" /> <%= @agendas.beer_2 %> </td><td><i class="fa fa-beer fa-2x" /> <%= @agendas.topic_2 %> </td></tr>
+    <tr><td><i class="fa fa-wrench fa-2x" /> <%= @agendas.beer_3 %> </td><td><i class="fa fa-beer fa-2x" /> <%= @agendas.topic_3 %> </td></tr>
   </tbody>
 </table>
 <br/>
 <p>
-  <b>When:</b> <br/>
-  <b>Where:</b>
+  <b>When:</b> <%= @agendas.meeting_date %> <br/>
+  <b>Where: <%= @agendas.venue_id %></b>
 </p>
 <input id="variant" type="hidden" value="desktop"/>

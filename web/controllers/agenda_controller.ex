@@ -6,8 +6,8 @@ defmodule Nerdbeers.AgendaController do
   plug :scrub_params, "agenda" when action in [:create, :update]
 
   def index(conn, _params) do
-    agendas = Repo.all(Agenda)
-    render(conn, "index.html", agendas: agendas)
+    agenda = Repo.one(Agenda)
+    render(conn, "index.html", agendas: agenda)
   end
 
 end
