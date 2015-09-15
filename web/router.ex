@@ -23,6 +23,8 @@ defmodule Nerdbeers.Router do
 
     # resources "/agenda", AgendaController, only: [:index]
     resources "/suggestions", SuggestionController
+
+    get "/mistake", MistakeController, :index
   end
 
   # Other scopes may use custom stacks.

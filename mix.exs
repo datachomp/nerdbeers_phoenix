@@ -18,7 +18,7 @@ defmodule Nerdbeers.Mixfile do
   def application do
     [mod: {Nerdbeers, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :rollbax]]
   end
 
   # Specifies which paths to compile per environment
@@ -34,6 +34,7 @@ defmodule Nerdbeers.Mixfile do
      {:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 2.1"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:rollbax, "~> 0.5"}]
   end
 end
