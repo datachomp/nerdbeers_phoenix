@@ -20,7 +20,7 @@ defmodule Nerdbeers.Router do
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
 
-    resources "/agenda", AgendaController
+    resources "/agenda", AgendaController, only: [:index]
     resources "/suggestions", SuggestionController
   end
 

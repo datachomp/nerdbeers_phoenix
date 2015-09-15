@@ -1,6 +1,0 @@
-<h2>Edit agenda</h2>
-
-<%= render "form.html", changeset: @changeset,
-                        action: agenda_path(@conn, :update, @agenda) %>
-
-<%= link "Back", to: agenda_path(@conn, :index) %>
