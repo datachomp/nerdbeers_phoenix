@@ -1,6 +1,6 @@
 use Mix.Config
 
-app_name         = :elixir_nerdbeers
+app_name         = :nerdbeers
 polling_interval = 1_000
 histogram_stats  = ~w(min max mean 95 90)a
 memory_stats     = ~w(atom binary ets processes total)a

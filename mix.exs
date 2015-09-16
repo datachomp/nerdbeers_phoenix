@@ -39,6 +39,7 @@ defmodule Nerdbeers.Mixfile do
      {:edown, github: "uwiger/edown", tag: "0.7", override: true},
 
      {:lager_logger, "~> 1.0"},
-     {:lager, "~> 2.1", override: true}]
+     {:lager, "~> 2.1", override: true},
+     {:goldrush, "~> 0.1", override: true}]
   end
 end
