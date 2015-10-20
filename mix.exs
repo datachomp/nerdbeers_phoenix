@@ -40,6 +40,7 @@ defmodule Nerdbeers.Mixfile do
 
      {:lager_logger, "~> 1.0"},
      {:lager, "~> 2.1", override: true},
-     {:goldrush, "~> 0.1", override: true}]
+     {:goldrush, "0.1.6", override: true}]
+
   end
 end
