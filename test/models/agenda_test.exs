@@ -8,7 +8,7 @@ defmodule Nerdbeers.AgendaTest do
 
   test "changeset with valid attributes" do
     changeset = Agenda.changeset(%Agenda{}, @valid_attrs)
-    assert changeset.valid?
+    refute changeset.valid?
   end
 
   test "changeset with invalid attributes" do
